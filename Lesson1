@@ -1,17 +1,12 @@
-#to display content
 print("Hello")
 
-#user input
 whats_your_name = input("What's your name? ")
 how_old_are_you = input("How old are you? ")
 
-#int is the number. Use it to extract from the value "how_old_are_you"
 age_of_user = int(how_old_are_you)
 
-#Booleans
 if (age_of_user) >= 25:
     print("You're over 25!")
 
-#elif is otherwise
 elif (age_of_user) <= 25:
     print("You're under 25!")
