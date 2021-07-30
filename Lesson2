@@ -1,4 +1,5 @@
 weight = int(input("Weight: "))
+#^ This is an int because user is entering their weight. Which is a number.
 unit = input('(L)bs or (K)g: ')
 if unit.upper() == "L":
     converted = weight * 0.45
