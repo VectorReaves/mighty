@@ -1,0 +1,13 @@
+motorcycles = ["honda", "toyota", "nissan"]
+print(motorcycles)
+
+too_expensive = 'toyota'
+motorcycles.remove("toyota")
+print(f"\nA {too_expensive.title()} is too expensive for me.")
+
+cars = ["bmw", "audi", "subaru"]
+cars.sort()
+print(cars)
+
+cars.reverse()
+print(cars)
