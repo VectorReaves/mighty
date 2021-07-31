@@ -1,0 +1,8 @@
+pizza = ["cheese", "pepperoni", "chedder"]
+for pizzas in pizza:
+    print(f'I like {pizzas}.')
+print("I really like pizza!")
+
+animals= ['dog', 'cat', 'bird']
+for animal in animals:
+    print(f'A {animals[0]} would make a great pet. But I also really like {animals[1]}s, too. Maybe a {animals[2]} is a good choice too.')
