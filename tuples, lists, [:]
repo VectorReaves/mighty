@@ -1,0 +1,55 @@
+players = ['charles', 'mike', 'zach', 'joe', 'alice']
+print("Here are the first three players on my team:")
+for player in players[:3]:
+    # the [:3 indicates which names from players will print
+    print(player.title())
+
+my_foods = ['pizza', 'cake', 'fries']
+friends_food = my_foods[:]
+# [:] This is a slice. It is necessary for this copy to work. This allows both lists to have appended unqiue foods
+
+my_foods.append('icecream')
+friends_food.append('watermelon')
+
+print("My favorite foods are:")
+print(my_foods)
+
+print("\nMy friends favorite foods are:")
+print(friends_food)
+
+items = ['playstation', 'xbox', 'nintendo', 'pc', 'steam']
+print("\nThe first three items in the list are:")
+# below is to show all items on the list.
+for item in items[:]:
+    print(item)
+# below is to show only the middle three on the list
+for item in items[1:4]:
+    print(f'\n{item}')
+
+pizzas = ['cheese', 'vegan', 'meat', 'bbq']
+for pizza in pizzas:
+    print(f'I love eating {pizza}!')
+
+friends_pizza = pizza[:]
+for friends_pizza in pizza:
+    print(friends_pizza)
+
+dimensions = (200, 50)
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+dimensions = (400, 100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+# This is how you can change the contents of a tuple. You must convert it to a list. 
+buffet_menu = ('cheesecake', 'bread', 'soup', 'fish', 'steak')
+revised_buffet_menu = list(buffet_menu)
+revised_buffet_menu[1] = 'kiwi'
+revised_buffet_menu[0] = 'burger'
+buffet_menu = tuple(revised_buffet_menu)
+
+for buffet in buffet_menu:
+    print(buffet)
