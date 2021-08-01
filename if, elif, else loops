@@ -1,0 +1,103 @@
+banned_user = ['andrew', 'carolina', 'david']
+user = 'andrew'
+# You can use this to provide specific messages to something on a list. USe 'the not' in this loop.
+if user not in banned_user:
+    print(f'{user.title()}, you can post!')
+else:
+    print("No way")
+
+game_active = True
+can_edit = False
+
+car = "subaru"
+print("Is car == 'subaru'? I predict True.")
+print(car == 'subaru')
+
+print("\nIs car == 'audi'? I predict False.")
+print(car == 'audi')
+
+mario_game = "mario kart"
+print("\nIs mario game == mario kart? I say yes!")
+print(mario_game.upper() == 'mario kart')
+
+print("\nIs the game equal to Sonic? Not likely.")
+print(mario_game.title() == "Sonic")
+
+age = 17
+if age >= 18:
+    print('You are old enough to vote.')
+else:
+    print("Sorry, you aren't old enough to vote.")
+
+age = 18
+
+if age < 4:
+    print("Your admission cost is 0$")
+elif age <= 18:
+    print("Your admission cost is 5$.")
+else:
+    print("Your admission cost is 10$")
+
+age2 = 78
+
+if age2 < 4:
+    price = 0
+elif age2 < 18:
+    price = 5
+elif age2 > 65:
+    price = 2
+else:
+    price = 15
+print(f'\nYour admission price is {price}$.')
+
+available_toppings = ['mushrooms', 'olives', 'cheese', 'pepperoni', 'anchovies']
+requested_toppings = ['mushrooms', 'cheese', 'fries']
+
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print(f'Adding {requested_topping}.')
+else:
+    print("We don't serve that.")
+print("\nFinished making your pizza!")
+
+alien_color = ['green', 'blue']
+if 'green' in alien_color:
+    print("You just earned 5 points!")
+if 'blue' in alien_color:
+    print("You just earned 1 point!")
+if 'red' in alien_color:
+    print("You just earned 3 points!")
+
+
+alien_color2 = ['red', 'green', 'yellow']
+if 'red' in alien_color2:
+    print("You just earned 15 points!")
+elif 'green' in alien_color:
+    print('You just earned 5 points!')
+elif 'yellow' in alien_color:
+    print("You just earned 10 points!")
+else:
+    print('You lost!')
+
+favorite_fruits = ['apple', 'peach', 'banana']
+if 'apple' in favorite_fruits:
+    print(f"You really like {favorite_fruits[0]}s!")
+if 'banana' in favorite_fruits:
+    print(f"You really like {favorite_fruits[2]}s!")
+
+usernames = ['admin', 'jaden', 'billy', 'joe', 'zoey']
+admin_names = ['admin']
+for username in usernames:
+    if username in admin_names:
+        print(f"\nWelcome back, {admin_names[0].title()}.")
+else:
+    print(f"Hello {usernames[2].title()}.")
+
+current_users = ['vector', 'reeves', 'poe', 'yellow', 'monkey']
+new_users = input("Please enter your username: ")
+users_name_from_input = new_users
+for current_user in current_users:
+    if current_user in users_name_from_input:
+        print("Sorry, that name is taken. You need to create an original username.")
+    if users_name_from_input:
+        print(f'Nice to meet you, {users_name_from_input}.')
